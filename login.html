@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="prg2.css" />
+    <link rel="stylesheet" href="stl.css" />
     <title> Login Page</title>
 </head>
 
@@ -13,17 +13,17 @@
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="#" class="sign-in-form">
+                <form action="login" method="POST" class="sign-in-form">
                     <h1 class="tit">HabitSpark</h1>
                     <P class="tit"><b>Build a Better Habit, <br>Build a Better Life</b></P>
                     <h4 class="title">Login</h4>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input type="text" id="name" name="name" placeholder="Username" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                        <input type="password" id="password" name="password" placeholder="Password" />
                     </div>
                     <a href=" # " class="for">Forgot Your Password</a>
                     <input type="submit" value="Login" class="btn solid" />
@@ -31,23 +31,23 @@
 
                     </div>
                 </form>
-                <form action="#" class="sign-up-form">
+                <form action="signup" method="POST" class="sign-up-form">
                     <h1 class="tit">HabitSpark</h1>
                     <P class="tit"><b>Build a Better Habit, <br>Build a Better Life</b></P>
                     <h4 class="title">Sign up</h4>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input type="text" id="name" name="name" placeholder="Username" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" />
+                        <input type="email" id="email" name="email" placeholder="Email" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                        <input type="password" id="password" name="password" placeholder="Password" />
                     </div>
-                    <input type="submit" class="btn" value="Sign up" />
+                    <input type="submit" class="btn" id="submit" value="Sign up" />
                     <div class="social-media">
                     </div>
                 </form>
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <script src="pg2.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
